@@ -16,11 +16,15 @@ import {
   List, 
   MapPin,
   Clock,
-  Truck
+  Truck,
+  MoveLeft
 } from 'lucide-react';
 import { MOCK_PRODUCTS, HYDERABAD_ZONES } from '@/lib/mock-data';
+import { useRouter } from "next/navigation";
 
 export function ProductListing() {
+  const router = useRouter();
+
   const [products, setProducts] = useState(MOCK_PRODUCTS);
   const [filteredProducts, setFilteredProducts] = useState(MOCK_PRODUCTS);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -114,6 +118,12 @@ export function ProductListing() {
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className='mb-4'>
+      <MoveLeft
+        className="h-5 w-5 cursor-pointer hover:text-blue-500 transition-colors"
+        onClick={() => router.back()}
+      />          
+        </div>
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-6">

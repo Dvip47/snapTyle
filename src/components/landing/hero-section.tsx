@@ -18,7 +18,7 @@ export function HeroSection() {
               </Badge>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Fashion in{' '}
-                <span className="text-[#FF6B35]">30 Minutes</span>
+                <span className="text-[#FF6B35]">15 Minutes</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
                 Get your favorite clothing items delivered within 15-30 minutes in Hyderabad. 
@@ -82,7 +82,7 @@ export function HeroSection() {
                   <div className="text-center text-white">
                     <div className="text-6xl mb-4">👗</div>
                     <div className="text-2xl font-bold">Instant Fashion</div>
-                    <div className="text-lg opacity-90">Delivered in Hours</div>
+                    <div className="text-lg opacity-90">Delivered in Minutes</div>
                   </div>
                 </div>
               </div>

@@ -39,7 +39,7 @@ const steps = [
     step: '04',
     icon: CheckCircle,
     title: 'Enjoy & Return',
-    description: 'Try your clothes and keep what you love. Easy returns within 7 days.',
+    description: 'Try your clothes and keep what you love. Easy same day return and 7-day exchange policy.',
     color: 'text-purple-600',
     bgColor: 'bg-purple-100',
   },

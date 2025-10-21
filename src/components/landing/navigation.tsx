@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, X, ShoppingBag, User } from 'lucide-react';
+import { Menu, X, ShoppingBag, SunMoon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 export function Navigation() {
@@ -52,7 +52,7 @@ export function Navigation() {
               size="icon"
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             >
-              <User className="h-5 w-5" />
+              <SunMoon />
             </Button>
             <Button variant="ghost" size="icon">
               <ShoppingBag className="h-5 w-5" />

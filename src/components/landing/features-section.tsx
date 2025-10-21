@@ -49,8 +49,8 @@ const features = [
   },
   {
     icon: Smartphone,
-    title: 'Easy Returns',
-    description: 'Simple 7-day return policy. Return items you don\'t love, no questions asked.',
+    title: 'Easy Returns and Exchanges',
+    description: 'Simple same day return and 7-day exchange policy. Return items you don\'t love, no questions asked.',
     color: 'text-purple-600',
     bgColor: 'bg-purple-100',
   },
@@ -70,7 +70,7 @@ export function FeaturesSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Experience the future of fashion shopping with our instant delivery service. 
-            Get your favorite clothes delivered in hours, not days.
+            Get your favorite clothes delivered in minutes, not days.
           </p>
         </div>
 

@@ -20,11 +20,13 @@ import {
   Plus,
   Minus,
   MapPin,
-  CheckCircle
+  CheckCircle,
+  MoveLeft
 } from 'lucide-react';
 import { MOCK_PRODUCTS } from '@/lib/mock-data';
 import { Product } from '@/redux/slices/productSlice';
 import { RelatedProducts } from './related-products';
+import { useRouter } from 'next/navigation';
 
 interface ProductDetailProps {
   productId: string;
@@ -32,6 +34,7 @@ interface ProductDetailProps {
 
 export function ProductDetail({ productId }: ProductDetailProps) {
   const dispatch = useDispatch();
+  const router = useRouter();
   const { cart } = useSelector((state: RootState) => state.orders);
   const [product, setProduct] = useState<Product | null>(null);
   const [selectedSize, setSelectedSize] = useState('');
@@ -112,6 +115,12 @@ export function ProductDetail({ productId }: ProductDetailProps) {
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className='mb-4'>
+      <MoveLeft
+        className="h-5 w-5 cursor-pointer hover:text-blue-500 transition-colors"
+        onClick={() => router.back()}
+      />          
+        </div>
       <div className="grid lg:grid-cols-2 gap-12">
         {/* Product Images */}
         <div className="space-y-4">

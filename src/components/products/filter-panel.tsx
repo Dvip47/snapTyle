@@ -108,7 +108,7 @@ export function FilterPanel({
               <label htmlFor="home_trial" className="text-sm font-medium cursor-pointer">
                 <div className="flex items-center space-x-2">
                   <Home className="h-4 w-4 text-purple-600" />
-                  <span>Home Trial Available (+₹25)</span>
+                  <span>with Home Trial Available (+₹25)</span>
                 </div>
               </label>
             </div>
